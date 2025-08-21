@@ -14,8 +14,6 @@ export default function Mobile() {
 
                 <div>
                     <SectionApps />
-                    <SectionApps />
-                    <SectionApps />
                 </div>
             </section>
         </>

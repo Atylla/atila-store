@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import styles from './header.module.scss'
 import { usePathname } from 'next/navigation'
+import Link from 'next/link';
 
 export function Header() {
     const pathname = usePathname();
@@ -19,10 +20,10 @@ export function Header() {
         >
             <div className={styles.headerContent}>
                 <nav>
-                    <a href="/" className={pathname === '/' ? styles.active : ''}>Welcome</a>
-                    <a href="/mobile" className={pathname === '/mobile' ? styles.active : ''}>Mobile</a>
-                    <a href="/desktop" className={pathname === '/desktop' ? styles.active : ''}>Desktop</a>
-                    <a href="/about" className={pathname === '/about' ? styles.active : ''}>About</a>
+                    <Link href="/" className={pathname === '/' ? styles.active : ''}>Welcome</Link>
+                    <Link href="/mobile" className={pathname === '/mobile' ? styles.active : ''}>Mobile</Link>
+                    <Link href="/desktop" className={pathname === '/desktop' ? styles.active : ''}>Desktop</Link>
+                    <Link href="/about" className={pathname === '/about' ? styles.active : ''}>About</Link>
                 </nav>
             </div>
         </header>

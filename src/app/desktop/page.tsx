@@ -15,8 +15,6 @@ export default function Desktop() {
 
                 <div>
                     <SectionApps />
-                    <SectionApps />
-                    <SectionApps />
                 </div>
             </section>
         </>
