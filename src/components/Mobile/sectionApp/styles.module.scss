@@ -28,12 +28,17 @@
         span {
             display: inline-block;
             margin-top: 0.8rem;
+            margin-right: 0.5rem;
             padding: 0.3rem 0.8rem;
             background: #e3f2d0;
             color: #55791d;
             border-radius: 0.4rem;
             font-size: 0.9rem;
             font-weight: 600;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 

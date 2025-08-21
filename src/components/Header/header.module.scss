@@ -3,6 +3,53 @@
     height: 100vh;
     width: 22rem;
     position: fixed;
+    transition: background 0.3s ease-out;
+
+    &.mobile {
+        background: #f3f3f1;
+
+        &.mobile {
+            background: #f3f3f1;
+
+            nav a.active {
+                color: #55791d; // cor do link ativo no mobile
+                font-weight: 600;
+            }
+
+            nav a {
+                color: #888;
+            }
+            nav a:hover {
+                filter: brightness(0.5);
+            }
+        }
+
+        &.desktop {
+            background: #832c2c;
+
+            nav a.active {
+                color: #ffcc00; // cor do link ativo no desktop
+                font-weight: 600;
+            }
+        }
+
+        &.about {
+            background: #43adb1;
+
+            nav a.active {
+                color: #ff7300; // cor do link ativo no about
+                font-weight: 600;
+            }
+        }
+    }
+
+    &.desktop {
+        background: #832c2c;
+    }
+
+    &.about {
+        background: #43adb1;
+    }
 
     .headerContent {
         max-width: 22rem;
